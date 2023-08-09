@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Lilita One', cursive;
+    margin: 20px;
+    color: #fffeec;
+    filter: contrast(190%) brightness(100%);
+    background: 
+    linear-gradient(65deg, rgba(144,127,253,0.35), rgba(249,200,160,0.52)),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2.07' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+
+
+
+
+   
+    
+    
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+h1 {
+display: flex;
+letter-spacing: .3rem;
+justify-content: center;
+align-self: center;
+text-shadow: 4px 1px .5px #897ed1;
+font-size: 1.8rem;
+}
+
+h1:hover {
+font-style: italic;
+}
+
+ol, ul {
+padding-left: 30px;
+}
+
+.board {
+display: flex;
+justify-content: center;
+align-items: center;
+align-self: center;
+aspect-ratio: 1;
+background-color: #d1b6a1;
+border-radius: 2rem;
+border:.5rem solid #d1b6a1;
+box-shadow: 4px 4px 10px #aa9dfe;
+width: 14.5rem;
+}
+
+
+input {
+  width: 20vw;
+  height: 3vh;
+  border: none;
+  border-bottom: 1px solid rgba(100, 100, 198, 0.693);
+  border-radius: 7px;
+  background-color: rgb(137, 126, 209, .2);
+  margin: 0 1rem;
+  color: #646cff;
+  font-family: 'Lilita One', cursive;
+  letter-spacing: .1rem;
+  
+}
+
+input:focus {
+  border: 2px solid rgba(254, 174, 110, 0.958)
+}
+
+.board-row:after {
+clear: both;
+content: "";
+display: table;
+
+}
+
+.status {
+font-size: 1.4rem;
+margin: 1rem;
+padding-bottom: 2.5rem;
+letter-spacing: .2rem;
+color: #897ed1;
+text-shadow: 2.7px .5px .5px #fffeec;
+text-align: center;
+
+}
+
+.square {
+border: .4rem solid #d1b6a1;
+justify-content: center;
+font-size: 2rem;
+font-family: 'Lilita One', cursive;
+line-height: 3rem;
+aspect-ratio: 1;
+padding: 0;
+text-align: center;
+width: 4.4rem;
+color: #ffb985;
+cursor: pointer;
+
+}
+
+
+
+
+.square:focus {
+outline: none;
+}
+
+.square:hover {
+background-color: rgb(179, 172, 225);
+}
+
+button.square[data-pro="X"] {
+color: #897ed1;
+}
+
+button.square[data-pro="O"] {
+  color: #ba90c2;
+}
+
+.board-row {
+border-top-left-radius: 3rem;
+}
+
+.kbd-navigation .square:focus {
+background: #ddd;
+}
+
+.game {
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100vw;
+}
+
+
+
+footer {
+padding-top: 2rem;
+text-align: center;
+letter-spacing: .1rem;
+line-height: 1.9rem;
+
+}
+
+a {
+text-decoration:none;
+color: #d8bca7;
+padding-left: 1rem;
+}
+a:hover {
+color:#897ed1;
+}
+
+i {
+color: #897ed1;
+}
+
+i:hover {
+color: #d8bca7;
+}
+
+.player-o-button, .player-x-button {
+  padding: .7rem;
+  margin: .5rem 0;
+  border-radius: 25px;
+  color: rgba(96, 96, 185, 0.839);
+  
+  
+
+}
+
+.player-o-button:hover, .player-x-button:hover {
+  background-color: white;
+  transition: all 100ms ease-in-out;
+  background-color: rgba(212, 169, 113, 0.484);
+  border: none;
+  color: white;
+}
+
+p {
+  text-align: center;
+  letter-spacing: .1rem;
+  padding-top: 2rem;
+  color:#897ed1;
+}
